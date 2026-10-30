@@ -1,0 +1,118 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[      3737,        108]
+NotebookOptionsPosition[      3345,         93]
+NotebookOutlinePosition[      3780,        110]
+CellTagsIndexPosition[      3737,        107]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   SubscriptBox["m", "N"], "=", "939.565"}], " ", 
+  RowBox[{"(*", 
+   RowBox[{"MeV", "/", 
+    SuperscriptBox["c", "2"]}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"G", " ", "=", " ", 
+   RowBox[{
+    RowBox[{"10", "^", 
+     RowBox[{"(", 
+      RowBox[{"-", "5"}], ")"}]}], " ", "/", " ", 
+    RowBox[{
+     RowBox[{"(", 
+      SubscriptBox["m", "N"], ")"}], "^", "2"}]}]}], " ", 
+  RowBox[{"(*", 
+   RowBox[{
+    SuperscriptBox["c", "2"], "/", "MeV"}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   SubscriptBox["E", "0"], " ", "=", " ", "1.81"}], " ", 
+  RowBox[{"(*", "MeV", "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   SubscriptBox["m", "e"], " ", "=", " ", "0.510"}], " ", 
+  RowBox[{"(*", 
+   RowBox[{"MeV", "/", 
+    SuperscriptBox["c", "2"]}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"dsigma", "[", 
+   RowBox[{"p_", ",", "Ee_"}], "]"}], ":=", " ", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"G", "^", "2"}], " ", "/", " ", 
+     RowBox[{"Pi", "^", "3"}]}], ")"}], "*", " ", 
+   RowBox[{"p", "^", "2"}], " ", "*", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      SubscriptBox["E", "0"], "-", "Ee"}], ")"}], "^", "2"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"f", "[", "p_", "]"}], ":=", "\[IndentingNewLine]", 
+  RowBox[{"Plot", "[", 
+   RowBox[{
+    RowBox[{"dsigma", "[", "x", "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", "0", ",", 
+      SubscriptBox["E", "0"]}], "}"}], ",", " ", 
+    RowBox[{"AxesLabel", "->", 
+     RowBox[{"{", 
+      RowBox[{"\"\<\!\(\*SubscriptBox[\(p\), \(e\)]\) \
+(MeV/\!\(\*SuperscriptBox[\(c\), \(2\)]\))\>\"", 
+       ",", "\"\<\!\(\*FractionBox[\(d\[CapitalGamma]\), SubscriptBox[\(dp\), \
+\(e\)]]\) (MeV*\!\(\*SuperscriptBox[\(c\), \(2\)]\))\>\""}], "}"}]}], ",", 
+    RowBox[{
+    "PlotLabel", 
+     "->", "\"\<Taxa de decaimento diferencial do \
+processo\!\(\*SuperscriptBox[\(\\\ \), \(14\)]\)O ->\!\(\*SuperscriptBox[\(\\\
+\ \), \(14\)]\)\!\(\*SuperscriptBox[\(Ne\), \
+\(+\)]\)\!\(\*SubscriptBox[\(\[Nu]\), \(e\)]\)\>\""}]}], "]"}]}]}], "Input",
+ CellChangeTimes->{{3.997188057472765*^9, 3.9971880587846146`*^9}, {
+  3.997188128898924*^9, 3.997188144386286*^9}, {3.997188215074995*^9, 
+  3.9971882269969044`*^9}, {3.997188279571705*^9, 3.997188405297428*^9}, {
+  3.9971884871504936`*^9, 3.9971886844074554`*^9}, {3.9971887519178658`*^9, 
+  3.9971887624847603`*^9}, {3.997188794050089*^9, 3.9971888049213943`*^9}, {
+  3.9971888412990017`*^9, 3.997188930103607*^9}, {3.9971889666994534`*^9, 
+  3.997188967556822*^9}, {3.997189034575756*^9, 3.997189045144106*^9}, {
+  3.997189120020071*^9, 3.997189213196701*^9}, {3.9971892722876186`*^9, 
+  3.9971893413350105`*^9}},ExpressionUUID->"5ab9cec8-2da0-304f-bec3-\
+c0553c7301b2"]
+},
+WindowSize->{1152, 579.6},
+WindowMargins->{{
+  Automatic, -5.399999999999864}, {-5.399999999999977, Automatic}},
+FrontEndVersion->"14.3 for Microsoft Windows (64-bit) (July 8, 2025)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"ae6d68e7-3c31-4a47-a00a-bb8d7283e4cc"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[554, 20, 2787, 71, 199, "Input",ExpressionUUID->"5ab9cec8-2da0-304f-bec3-c0553c7301b2"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
